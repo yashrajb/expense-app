@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render expenselistitem 1`] = `
+<div>
+  <h1>
+    Expense List
+  </h1>
+  <ExpenseListItem
+    amount={195}
+    createdAt={0}
+    description="Gum"
+    id="123456789"
+    key="123456789"
+    note=""
+  />
+  <ExpenseListItem
+    amount={19500}
+    createdAt={-345600000}
+    description="Rent"
+    id="123456789abcdefgh"
+    key="123456789abcdefgh"
+    note=""
+  />
+  <ExpenseListItem
+    amount={4500}
+    createdAt={345600000}
+    description="Credit card"
+    id="123456789abcdefghijkl"
+    key="123456789abcdefghijkl"
+    note=""
+  />
+</div>
+`;
+
+exports[`should render expenselistitem 2`] = `
+<div>
+  <h1>
+    Expense List
+  </h1>
+  <p>
+    No expenses
+  </p>
+</div>
+`;
