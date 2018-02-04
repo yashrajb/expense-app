@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "serve": "live-server public/",
-    "build:test": "webpack --watch",
+    "build:test": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json"
+    "test": "jest --config=jest.config.json",
+    "start":"node server/server.js",
+    "heroku-postbuild":"yarn run build:prod"
   },
   "author": "yashraj basan",
   "license": "ISC",
