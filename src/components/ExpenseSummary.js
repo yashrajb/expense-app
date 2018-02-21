@@ -14,7 +14,7 @@ const expenseCount = (props) => {
 
 const mapStateToProps = (state) => ({
     state:selectExpenses(state.expenses,state.filters)
-  })
+  });
 
 
 export default connect(mapStateToProps)(expenseCount)
