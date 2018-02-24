@@ -109,23 +109,6 @@ expect(setExpense(expenses)).toEqual({
 
 });
 
-test('should give expense',(done) => {
-
-const store = createMockStore({});
-store.dispatch(startSetExpense()).then(() => {
-
-  const actions = store.getActions();
-  expect(actions[0]).toEqual({
-    type:'SET_EXPENSE',
-    expense:expenses
-  });
-  
-  done();
-});
-
-
-
-},1000000);
 
 // test('should setup add expense action object with default values', () => {
 //   const action = addExpense();
